@@ -47,7 +47,7 @@ QPushButton:pressed {
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../../../Downloads/Icons/189260.png</normaloff>../../../Downloads/Icons/189260.png</iconset>
+         <normaloff>../Downloads/Icons/189260.png</normaloff>../Downloads/Icons/189260.png</iconset>
        </property>
       </widget>
      </item>
@@ -109,10 +109,10 @@ QPushButton:pressed {
          </property>
          <property name="font">
           <font>
-           <family>Arial</family>
-           <pointsize>12</pointsize>
-           <weight>75</weight>
-           <bold>true</bold>
+           <family>Segoe UI Light</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
            <stylestrategy>NoAntialias</stylestrategy>
           </font>
          </property>
@@ -188,6 +188,7 @@ border: 1px solid rgb(0, 0, 0)</string>
              </property>
              <property name="font">
               <font>
+               <family>Arial</family>
                <pointsize>12</pointsize>
                <weight>75</weight>
                <italic>false</italic>
@@ -195,7 +196,7 @@ border: 1px solid rgb(0, 0, 0)</string>
                <underline>false</underline>
                <strikeout>false</strikeout>
                <stylestrategy>PreferDefault</stylestrategy>
-               <kerning>true</kerning>
+               <kerning>false</kerning>
               </font>
              </property>
              <property name="styleSheet">
@@ -468,8 +469,8 @@ QPushButton:pressed {
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>529</width>
-            <height>450</height>
+            <width>98</width>
+            <height>89</height>
            </rect>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_7">

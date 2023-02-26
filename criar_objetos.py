@@ -1,11 +1,13 @@
 from PyQt5 import QtWidgets, uic, QtGui, QtCore
 from Notes import Ui_Form
+from PyQt5.QtWidgets import QButtonGroup
 
 
 class CriaObjetos(Ui_Form):
     def __init__(self):
         super(CriaObjetos, self).__init__()
         self.dicionario = {}
+        self.group = QButtonGroup()
 
     def criar_button(self, name):
         """
@@ -15,6 +17,7 @@ class CriaObjetos(Ui_Form):
         :return: None
         """
         self.text_Button = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
+        self.text_Button.setAccessibleName(name)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -40,7 +43,8 @@ class CriaObjetos(Ui_Form):
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.text_Button.setCheckable(True)
-        self.dicionario[name] = {'botao': self.text_Button}  # O ObjectName também servirá como chave para o dicionário
+        self.group.addButton(self.text_Button)
+        return self.text_Button
 
 
 app = QtWidgets.QApplication([])
