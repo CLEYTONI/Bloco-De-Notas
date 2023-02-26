@@ -1,5 +1,0 @@
-msg = QMessageBox()
-msg.setIcon(QMessageBox.Information)
-msg.setWindowTitle('Importação XML')
-msg.setText('Importação Concluída')
-msg.exec_()
